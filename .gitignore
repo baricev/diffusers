@@ -1,3 +1,4 @@
+examples/instruct_pix2pix/.gitignore
 # Initially taken from GitHub's Python gitignore file
 
 # Byte-compiled / optimized / DLL files
