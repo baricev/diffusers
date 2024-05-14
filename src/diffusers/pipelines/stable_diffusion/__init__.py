@@ -98,6 +98,7 @@ if is_transformers_available() and is_flax_available():
     _import_structure["pipeline_flax_stable_diffusion"] = ["FlaxStableDiffusionPipeline"]
     _import_structure["pipeline_flax_stable_diffusion_img2img"] = ["FlaxStableDiffusionImg2ImgPipeline"]
     _import_structure["pipeline_flax_stable_diffusion_inpaint"] = ["FlaxStableDiffusionInpaintPipeline"]
+    _import_structure["pipeline_flax_stable_diffusion_instruct_pix2pix"] = ["FlaxStableDiffusionInstructPix2PixPipeline"]
     _import_structure["safety_checker_flax"] = ["FlaxStableDiffusionSafetyChecker"]
 
 if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
@@ -182,6 +183,9 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
         )
         from .pipeline_flax_stable_diffusion_inpaint import (
             FlaxStableDiffusionInpaintPipeline,
+        )
+        from .pipeline_flax_stable_diffusion_instruct_pix2pix import (
+            FlaxStableDiffusionInstructPix2PixPipeline,
         )
         from .pipeline_output import FlaxStableDiffusionPipelineOutput
         from .safety_checker_flax import FlaxStableDiffusionSafetyChecker
